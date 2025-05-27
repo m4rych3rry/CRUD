@@ -1,0 +1,7 @@
+CREATE TABLE contatos (
+    id SERIAL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    numero VARCHAR(5),
+    partido VARCHAR(100),
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
