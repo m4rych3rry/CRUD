@@ -5,3 +5,5 @@ CREATE TABLE candidatos (
     partido VARCHAR(100),
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ); 
+
+

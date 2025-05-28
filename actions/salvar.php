@@ -3,10 +3,10 @@ include_once("../config/database/database.php");
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
+    $numero = $_POST['numero'];
+    $partido = $_POST['partido'];
 
-    $sql = "INSERT INTO contatos (nome, email, telefone) VALUES ('$nome', '$email', '$telefone')";
+    $sql = "INSERT INTO candidatos (nome, numero, partido) VALUES ('$nome', '$numero', '$partido')";
 
     $con->query($sql);
     header("Location: ../index.php");
